@@ -173,6 +173,7 @@ cuando la resolucion alcance 874px*/
 }
 
 .btn-cta {
+    background: linear-gradient(135deg, var(--rosa-oscuro) 0%, var(--marron-ocuro) 100%);
     background-color: var(--rosa-oscuro);
     padding: 0.7em 1.5em; /* Tamaño de botón reducido */
     color: var(--blanco);
@@ -181,14 +182,33 @@ cuando la resolucion alcance 874px*/
     border-radius: 30px;
     display: inline-block;
     margin-top: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(231, 127, 160, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 0.9em; /* Tamaño de texto reducido */
 }
 
 .btn-cta:hover {
-    background-color: var(--marron-claro);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(231, 127, 160, 0.6);
+}
+
+.cta-container-inline {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.btn-cta-xl {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border-radius: 40px;
+    background: linear-gradient(135deg, var(--lila) 0%, var(--rosa-oscuro) 100%);
+    box-shadow: 0 8px 25px rgba(163, 125, 244, 0.5);
+}
+
+.btn-cta-xl:hover {
+    background: linear-gradient(135deg, var(--rosa-oscuro) 0%, var(--lila) 100%);
+    box-shadow: 0 10px 30px rgba(163, 125, 244, 0.7);
+    transform: translateY(-5px) scale(1.05);
 }
 
 .hero {
@@ -237,15 +257,16 @@ cuando la resolucion alcance 874px*/
 }
 
 .section {
-    padding: 2em 1em; /* Tamaño de padding reducido */
+    padding: 2.5em 1em; /* Ligeramente más padding para la sección */
     text-align: center;
-    background-color: var(--rosa-claro);
+    background: linear-gradient(to bottom right, var(--rosa-claro), var(--blanco));
     border-radius: 20px;
     margin: 2em 1em;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra más suave y extensa */
     transform: translateY(20px);
     opacity: 0;
     transition: all 0.5s ease;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Efecto de borde tipo cristal */
 }
 
 .section-title {
@@ -268,16 +289,18 @@ cuando la resolucion alcance 874px*/
 }
 
 .funcionalidad-item {
-    background-color: var(--lila);
+    background: linear-gradient(135deg, var(--lila), #B495F6); /* Gradiente más vibrante */
+    color: var(--blanco);
     padding: 1.5em; /* Tamaño de padding reducido */
     margin: 1em;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 15px; /* Bordes un poco más suaves */
+    box-shadow: 0 8px 20px rgba(163, 125, 244, 0.3); /* Sombra difuminada utilizando el color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .funcionalidad-item:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(163, 125, 244, 0.5);
 }
 
 .beneficios {
@@ -288,17 +311,18 @@ cuando la resolucion alcance 874px*/
 }
 
 .beneficio {
-    background-color: var(--amarillo);
+    background: linear-gradient(135deg, var(--amarillo), #F6E6BC);
     padding: 1.5em; /* Tamaño de padding reducido */
     margin: 1em;
     border-radius: 20px;
     flex: 1 1 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(242, 221, 164, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .beneficio:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(242, 221, 164, 0.6);
 }
 
 .faq {
@@ -396,22 +420,7 @@ cuando la resolucion alcance 874px*/
     opacity: 1; /* Opacidad de los bullets activos de paginación */
 }
 
-/* Video responsivo */
-.video-container {
-    text-align: center;
-    position: relative;
-    overflow:hidden;
-    padding-bottom: 46%;
-    margin: 1em 5em 0 5em;
-}
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 /* Responsivo */
 @media (max-width: 874px) {
